@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Dashboard"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="153dp"
+                android:layout_height="155dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="29dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/ralewaybold"
+                        android:gravity="center_horizontal|top"
+                        android:text="@string/Active"
+                        android:textAppearance="@style/Active"
+                        android:textSize="22dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="23dp"
+                            android:src="@drawable/network2" />
+
+
+                        <TextView
+                            android:id="@+id/some_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/ralewaybold"
+                            android:gravity="center_horizontal|top"
+                            android:text="@string/Active_number"
+                            android:textAppearance="@style/Active"
+                            android:textSize="48dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="153dp"
+                android:layout_height="155dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="29dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/completed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/ralewaybold"
+                        android:gravity="center_horizontal|top"
+                        android:text="@string/Completed"
+                        android:textAppearance="@style/completed"
+                        android:textSize="22dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="23dp"
+                            android:src="@drawable/network3" />
+
+
+                        <TextView
+                            android:id="@+id/Pending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/ralewaybold"
+                            android:gravity="center_horizontal|top"
+                            android:text="@string/Completed_number"
+                            android:textAppearance="@style/completed"
+                            android:textSize="48dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/createElection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Election"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:fontFamily="@font/ralewaybold"
+            android:background="@drawable/createelectionbutton"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
