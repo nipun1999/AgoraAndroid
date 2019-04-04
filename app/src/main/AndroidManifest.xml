@@ -10,13 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".loginScreen" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".SplashActivity" />
         <activity
             android:name=".Dashboard"
             android:label="@string/title_activity_dashboard"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme" />
+        <activity android:name=".createdElections" />
+        <activity android:name=".editCreatedElection"></activity>
+        <activity android:name=".completedElection">
+
         </activity>
-        <activity android:name=".createdElections">
+        <activity android:name=".EligibleElections">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editCreatedElection">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/rectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/curvedtopbar"
+                />
+
+
+            <LinearLayout
+                android:layout_marginTop="19dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/backbtn"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:layout_weight="1.8"
+                    android:fontFamily="@font/ralewaybold"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:text="Elections"/>
+
+                <TextView
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/ralewayextrabold"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:layout_marginRight="25dp"
+                    android:text="Ongoing"/>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/gsoc_v_s_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="IOS v/s Android"
+            android:fontFamily="@font/ralewaysemibold"
+
+            android:textAppearance="@style/gsoc_v_s_go"
+            android:gravity="center_horizontal|top"
+            />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:text="Description"
+            android:textAppearance="@style/description"
+            android:gravity="center_horizontal|top"
+            />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <EditText
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:background="@drawable/curvededittext"
+                android:textSize="12dp"
+                android:text="Election to decide which one is better"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/start"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/ralewaysemibold"
+                    android:gravity="center_horizontal|top"
+                    android:text="Start"
+                    android:textAppearance="@style/description" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="4dp">
+
+                    <EditText
+                        android:layout_width="125dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/curvededittext"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="02/04/1999"
+                        android:textAlignment="center"
+                        android:textSize="12dp" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/stop"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/ralewaysemibold"
+                    android:gravity="center_horizontal|top"
+                    android:text="Stop"
+                    android:textAppearance="@style/description" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="4dp">
+
+                    <EditText
+                        android:layout_width="125dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/curvededittext"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="02/04/1999"
+                        android:textAlignment="center"
+                        android:textSize="12dp" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/algorithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:text="Algorithm"
+            android:textAppearance="@style/description"
+            android:gravity="center_horizontal|top"
+            />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <EditText
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:background="@drawable/curvededittext"
+                android:textSize="12dp"
+                android:text="Minimax Condorset"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/candidates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:text="Candidates"
+            android:textAppearance="@style/description"
+            android:gravity="center_horizontal|top"
+            />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <EditText
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/curvededittext"
+                android:textSize="12dp"
+                android:text="1. Mr Xyz \n2.Mr Abc \n3.Mr Pqr \n4.Mr abc"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="246dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            android:backgroundTint="#219653"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="25dp">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ralewaybold"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:text="Edit"/>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
