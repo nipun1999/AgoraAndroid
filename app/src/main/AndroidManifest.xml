@@ -16,19 +16,16 @@
             android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme" />
         <activity android:name=".createdElections" />
-        <activity android:name=".editCreatedElection"></activity>
-        <activity android:name=".completedElection">
-
-        </activity>
+        <activity android:name=".editCreatedElection" />
+        <activity android:name=".completedElection"></activity>
         <activity android:name=".EligibleElections">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".registerActivity"></activity>
     </application>
 
 </manifest>
