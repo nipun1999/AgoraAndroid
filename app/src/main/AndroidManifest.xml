@@ -14,18 +14,26 @@
         <activity
             android:name=".Dashboard"
             android:label="@string/title_activity_dashboard"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".createdElections" />
-        <activity android:name=".editCreatedElection" />
-        <activity android:name=".completedElection"></activity>
-        <activity android:name=".EligibleElections">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".registerActivity"></activity>
+        <activity android:name=".createdElections" />
+        <activity android:name=".editCreatedElection" />
+        <activity android:name=".completedElection" />
+        <activity android:name=".EligibleElections" />
+        <activity android:name=".registerActivity" />
+        <activity android:name=".createElection1" />
+        <activity android:name=".createElection2"></activity>
+        <activity android:name=".createElection3">
+
+        </activity>
+        <activity android:name=".createElection4">
+
+        </activity>
     </application>
 
 </manifest>

@@ -43,11 +43,101 @@
                 app:cardCornerRadius="27dp"
                 app:cardElevation="-1dp">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center">
+
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ralewaybold"
+                    android:text="@string/register"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="@style/register"
+                    android:gravity="top"
+                    />
+
+                 <EditText
+                     android:layout_width="300dp"
+                     android:layout_height="40dp"
+                     android:hint="First Name"
+                     android:textAlignment="center"
+                     android:layout_marginTop="16dp"
+                     android:background="@drawable/rectangle_4">
+
+                 </EditText>
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:hint="Last Name"
+                        android:textAlignment="center"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/rectangle_4">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:hint="Email"
+                        android:textAlignment="center"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/rectangle_4">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:hint="Password"
+                        android:textAlignment="center"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/rectangle_4">
+
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:hint="Confirm Password"
+                        android:textAlignment="center"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/rectangle_4">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
             </android.support.v7.widget.CardView>
 
 
 
         </RelativeLayout>
+
+
+        <Button
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:text="SignUp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:background="@drawable/rectangle_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Already Have an Account ? Login"/>
 
 
 

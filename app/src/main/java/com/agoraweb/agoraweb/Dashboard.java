@@ -75,17 +75,17 @@ public class Dashboard extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.dashboard_nav) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.vote_nav) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.profile_nav) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.about_nav) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.help_nav) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.logOut_nav) {
 
         }
 

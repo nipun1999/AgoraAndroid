@@ -161,6 +161,17 @@
 
     </style>
 
+    <style name="register">
+
+        <item name="android:textSize">
+            28sp
+        </item>
+
+        <item name="android:textColor">
+            #219653
+        </item>
+
+    </style>
 
 
 </resources>
