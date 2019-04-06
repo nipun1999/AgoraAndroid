@@ -1,4 +1,4 @@
-## This is the codebase for the agora android app.
+## Codebase for the agora android app.
 
 I have used Native Java for development.
 Currently i have used firebase authentication for registration and login but later on we will move to rest API’s. 
@@ -8,6 +8,11 @@ Also, the data in the application is all dummy and certain features like adding 
 The link for the video of the whole flow of the prototype on a live android design is given below:
 
 https://drive.google.com/file/d/1xZagRDk4iAhOXPovUwIhTXS0ROOUaaJC/view?usp=sharing
+
+
+## The link for the proposal of the draft of GSOC'19:
+
+https://docs.google.com/document/d/15VaPmfuO8C7sOvAAEi7StC2sv6MOjSJ96-IwERoKC5A/edit?usp=sharing
 
 
 ## Mockups For Android Development under Project Agora Web
@@ -24,17 +29,17 @@ Hoping to get the feedback from all the mentors and other people.
 
 Wen the app is opened this will be introductory splash screen with logo spinning in circular motion. It will check wether the user is signed in or not and will redirect to login page or dashboard page accordingly.
 
-![Loading](/uploads/a1c94c8b07e5941f0b4149a347c69423/Loading.png)
+![Loading](gsoc19 android mockups/Loading.png)
 
 
 ###### Login Page
 
 The Login Page will have option of login through google, facebook and email. Used Agora colours all over
-![AOSSIE_Login](/uploads/c7720fa4162a482e513ed742bab37a4c/AOSSIE_Login.jpg)
+![AOSSIE_Login](gsoc19 android mockups/AOSSIE_Login.jpg)
 
 ###### Register Page
 
-![Register](/uploads/f037b89faab6ef14b5c16362cc1f5f5a/Register.png)
+![Register](gsoc19 android mockups/Register.png)
 
 Once the registration is done a verification email will be sent to the user. We can use firebase auth for that.
 
@@ -42,57 +47,60 @@ Once the registration is done a verification email will be sent to the user. We 
 
 On clicking on any of the card the corresponding elections page will be opened with data filtered according to the option clicked.
 
-![dashboard](/uploads/abe6a4d4d5927f27803c45bfe0ad028e/dashboard.png)
+![dashboard](gsoc19 android mockups/dashboard.png)
 
-###### Election Page
-
-User can see the elections created by him with this screen and can edit them as well. By clicking on any election the view Election screen will be opened
-
-![createdElection](/uploads/0afaf2b74f454460c82c791af2754889/createdElection.png)
 
 ###### View Election 
 
 User can add more number of candiates on this page by editing the election. 
 
-![viewElection](/uploads/ddbf442accc435ac42a211c51332bb40/viewElection.png)
+![viewElection](/gsoc19 android mockups/createdElection.png)
+
+
+###### Election Page
+
+User can see the elections created by him with this screen and can edit them as well. By clicking on any election the view Election screen will be opened
+
+![createdElection](gsoc19 android mockups/viewElection.png)
+
 
 ###### Completed Election
 
 User can see the list of completed elections and result on this page.
 
-![completedElection__2_](/uploads/ab09d30237eb6f9c664dab35d20644aa/completedElection__2_.png)
+![completedElection__2_](gsoc19 android mockups/completedElection (2).png)
 
 ###### Create Election
 
 I have divided the process of creating election in multiple screens with total of 4 screens. Tried to follow the basic theming of colours and design everywhere.
 
-![createElection1](/uploads/efc4927fde09bbcfefe94ee49cce047b/createElection1.png)    ![createElection2](/uploads/7963a083ac23d7e635e93b3b98bc9300/createElection2.png)
+![createElection1](gsoc19 android mockups/createElection1.png)    ![createElection2](gsoc19 android mockups/createElection2.png)
 
-![createElection3](/uploads/17c5a89008e2d0630a4b87bfababa8b0/createElection3.png)    ![createElection4](/uploads/1bd155e5761a7fa6fdad2d9a8e135ee5/createElection4.png)
+![createElection3](gsoc19 android mockups/createElection3.png)    ![createElection4](gsoc19 android mockups/createElection4.png)
 
 ###### Eligible Voting Elections Screen
 
 The elections that you are eligible to vote for will be visible on this screen.
 
-![EligibleElection](/uploads/82245872fa8c4440cb8ae7dc015fea26/EligibleElection.png)
+![EligibleElection](gsoc19 android mockups/EligibleElection.png)
 
 ###### Cast Voting Screen
 
 User can Cast vote through this screen.
 
-![voteScreen](/uploads/adbc1c0a753153835a4b889a5bd85418/voteScreen.png)
+![voteScreen](gsoc19 android mockups/voteScreen.png)
 
 ###### Side Nav Bar
 
 This will have various options to navigate through the app
 
-![sideNav](/uploads/a7c029f834a9df6496058500589228ca/sideNav.png)
+![sideNav](gsoc19 android mockups/sideNav.png)
 
 ###### Profile
 
 Profile section of the app with menu feautres of changing password, viewing your elections in recycler views and updating profile etc.
 
-![Profile](/uploads/13a899f773f9d5e02db116fbfb9ff1b9/Profile.png)
+![Profile](gsoc19 android mockups/Profile.png)
 
 
 Waiting eagerly for the feedback. You can see all the designs in the repositiory as well
