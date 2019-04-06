@@ -84,11 +84,18 @@ The elections that you are eligible to vote for will be visible on this screen.
 
 ![EligibleElection](gsoc19 android mockups/EligibleElection.png)
 
-###### Cast Voting Screen
+###### Cast Voting Screen (preferrential)
 
 User can Cast vote through this screen.
 
 ![voteScreen](gsoc19 android mockups/voteScreen.png)
+
+###### Cast Voitng Screen (range)
+
+User can Cast vote through this screen by using range algorithm.
+
+![voteScreen](gsoc19 android mockups/voteScreenRange.png)
+
 
 ###### Side Nav Bar
 
