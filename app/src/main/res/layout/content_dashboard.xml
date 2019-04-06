@@ -21,6 +21,7 @@
 
 
             <android.support.v7.widget.CardView
+                android:id="@+id/activeCard"
                 android:layout_width="153dp"
                 android:layout_height="155dp"
                 android:layout_alignParentStart="true"
@@ -86,6 +87,7 @@
 
 
             <android.support.v7.widget.CardView
+                android:id="@+id/completedCard"
                 android:layout_width="153dp"
                 android:layout_height="155dp"
                 android:layout_alignParentRight="true"
@@ -153,7 +155,7 @@
 
 
         <Button
-            android:id="@+id/createElection"
+            android:id="@+id/createElectionBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create Election"

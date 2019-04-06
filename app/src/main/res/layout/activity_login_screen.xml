@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".loginScreen">
 
     <LinearLayout
@@ -51,20 +52,23 @@
                 android:layout_marginTop="17dp"
                 android:background="@drawable/rectangle_4"
                 android:hint="@string/username"
+                android:inputType="textEmailAddress"
                 android:textAlignment="center"
                 android:textSize="16dp" />
 
             <EditText
-                android:id="@+id/passwordTxt"
+                android:id="@+id/passwordEdtTxt"
                 android:layout_width="260dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="21dp"
                 android:background="@drawable/rectangle_4"
                 android:hint="@string/password"
+                android:inputType="textPassword"
                 android:textAlignment="center"
                 android:textSize="16dp" />
 
             <Button
+                android:id="@+id/goBtn"
                 android:layout_width="148dp"
                 android:layout_height="43dp"
                 android:layout_marginTop="25dp"
@@ -96,6 +100,7 @@
             android:background="@android:color/transparent"/>
 
         <TextView
+            android:id="@+id/createAccountBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create Account"

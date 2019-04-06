@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class editCreatedElection extends AppCompatActivity {
+public class profile extends AppCompatActivity {
 
     private ImageView backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_created_election);
+        setContentView(R.layout.activity_profile);
 
         backBtn = findViewById(R.id.backBtn);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(editCreatedElection.this,createdElections.class));
+                startActivity(new Intent(profile.this,Dashboard.class));
             }
         });
     }

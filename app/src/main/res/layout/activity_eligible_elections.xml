@@ -20,7 +20,7 @@
                 android:layout_height="73dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:background="@drawable/curvedtopbar"
+                android:background="@drawable/rectangle_2"
                 />
 
 
@@ -35,6 +35,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="10dp"
+                    android:id="@+id/backBtn"
                     android:src="@drawable/backbtn"/>
 
                 <TextView
@@ -200,6 +201,7 @@
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
+                    android:id="@+id/voteBtn"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="18dp"

@@ -25,6 +25,7 @@
                 android:layout_height="32dp"
                 android:layout_gravity="left"
                 android:layout_weight="0.2"
+                android:id="@+id/backBtn"
                 android:layout_marginLeft="20dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/backbtn" />
@@ -173,7 +174,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
+                android:id="@+id/nextBtn"
                 android:text="Next"
                 android:elevation="1dp"
                 android:textColor="@android:color/black"

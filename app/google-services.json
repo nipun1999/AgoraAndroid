@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "926753189180",
+    "firebase_url": "https://agoraweb-d5b78.firebaseio.com",
+    "project_id": "agoraweb-d5b78",
+    "storage_bucket": "agoraweb-d5b78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926753189180:android:f6b76027b06e67b1",
+        "android_client_info": {
+          "package_name": "com.agoraweb.agoraweb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926753189180-vch5gkp48jds6k0tvl7a8e42qnq09lab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agoraweb.agoraweb",
+            "certificate_hash": "a9bde7d8422265b69b0d59f3fbad39086e008a7f"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEbdPCqNEltD61Pp8k9tGu0-Q9eA4Ci0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926753189180-edhsqup6f7akpeerkriohvs5h6e31rh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
