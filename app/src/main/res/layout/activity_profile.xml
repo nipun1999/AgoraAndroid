@@ -22,7 +22,7 @@
                 android:layout_height="157dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:background="@drawable/rectangle_2" />
+                android:background="@drawable/gradienttheme" />
 
 
             <LinearLayout
