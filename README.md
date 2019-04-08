@@ -26,10 +26,10 @@ Wen the app is opened this will be introductory splash screen with logo spinning
 
 ![Loading](gsoc19 android mockups/Loading.png)
 
-
 ###### Login Page
 
 The Login Page will have option of login through google, facebook and email. Used Agora colours all over
+
 ![AOSSIE_Login](gsoc19 android mockups/AOSSIE_Login.jpg)
 
 ###### Register Page
@@ -110,5 +110,3 @@ Profile section of the app with menu feautres of changing password, viewing your
 
 ![Profile](gsoc19 android mockups/Profile.png)
 
-
-Waiting eagerly for the feedback. You can see all the designs in the repositiory as well
