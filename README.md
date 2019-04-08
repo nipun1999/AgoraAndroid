@@ -10,11 +10,6 @@ The link for the video of the whole flow of the prototype on a live android desi
 https://drive.google.com/file/d/1xZagRDk4iAhOXPovUwIhTXS0ROOUaaJC/view?usp=sharing
 
 
-## The link for the proposal of the draft of GSOC'19:
-
-https://docs.google.com/document/d/15VaPmfuO8C7sOvAAEi7StC2sv6MOjSJ96-IwERoKC5A/edit?usp=sharing
-
-
 ## Mockups For Android Development under Project Agora Web
 I have created mockups regarding Issue #91
 
@@ -95,6 +90,12 @@ User can Cast vote through this screen.
 User can Cast vote through this screen by using range algorithm.
 
 ![voteScreen](gsoc19 android mockups/voteScreenRange.png)
+
+###### Cast Voitng Screen (range)
+
+User can Cast vote through this screen by using score algorithm.
+
+![voteScreen](gsoc19 android mockups/voteScreenScore.png)
 
 
 ###### Side Nav Bar
