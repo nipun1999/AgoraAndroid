@@ -31,7 +31,7 @@ public class loginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-
+        //initialising all my objects
         createAcc = findViewById(R.id.createAccountBtn);
         userNameTxt = findViewById(R.id.usernameEdtTxt);
         passwordTxt = findViewById(R.id.passwordEdtTxt);
@@ -63,24 +63,27 @@ public class loginScreen extends AppCompatActivity {
     private void loginUser() {
         String email = userNameTxt.getText().toString();
         final String password = passwordTxt.getText().toString();
-
+        //checking if email or password is entered.
         if(TextUtils.isEmpty(email)){
             Toast.makeText(this, "Please Enter your email", Toast.LENGTH_SHORT).show();
         }else if(TextUtils.isEmpty(password)){
             Toast.makeText(this, "Please Enter your password", Toast.LENGTH_SHORT).show();
         }else{
             progressBar.show();
+            //authorising user
             auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(loginScreen.this, new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     progressBar.dismiss();
                     if(!task.isSuccessful()){
+                        //failed case
                         if (password.length() < 6) {
                             passwordTxt.setError("Password should be of min 6 charachters");
                         } else {
-                            Toast.makeText(loginScreen.this,"Authentication Failed", Toast.LENGTH_LONG).show();
+                            Toast.makeText(loginScreen.this,"Invalid Credentials", Toast.LENGTH_LONG).show();
                         }
                     }else{
+                        //successful case
                         Toast.makeText(loginScreen.this, "Authentication Successful", Toast.LENGTH_SHORT).show();
                         Intent dashboard = new Intent(loginScreen.this,Dashboard.class);
                         startActivity(dashboard);

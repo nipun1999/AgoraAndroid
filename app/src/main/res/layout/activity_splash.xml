@@ -32,8 +32,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
                 android:textAlignment="center"
-                android:text="Agora Web"
-                android:textSize="30dp"
+                android:text="@string/agora_web"
+                android:textSize="30sp"
                 android:fontFamily="@font/ralewaymedium"
                 android:layout_marginTop="25dp"
                 android:textColor="@android:color/white"/>

@@ -20,9 +20,11 @@ public class SplashActivity extends AppCompatActivity {
 
         int secondsDelayed = 1;
         auth = FirebaseAuth.getInstance();
+        //checking if the user is logged in or not
         if(auth.getCurrentUser()==null){
             new Handler().postDelayed(new Runnable() {
                 public void run() {
+                    //directing to login screen
                     startActivity(new Intent(SplashActivity.this, loginScreen.class));
                     finish();
                 }
@@ -30,6 +32,7 @@ public class SplashActivity extends AppCompatActivity {
         }else{
             new Handler().postDelayed(new Runnable() {
                 public void run() {
+                    //directing to dashboard screen
                     startActivity(new Intent(SplashActivity.this, Dashboard.class));
                     finish();
                 }

@@ -47,7 +47,7 @@
          android:textColor="@android:color/white"
          android:textAlignment="center"
          android:layout_marginRight="25dp"
-         android:text="Created Elections"/>
+         android:text="@string/created_elections"/>
 
 
      </LinearLayout>
@@ -80,7 +80,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2.2"
                         android:fontFamily="@font/ralewaysemibold"
-                        android:text="Election Name 1"
+                        android:text="@string/election_name_1"
                         android:textAlignment="center"
                         android:textSize="20dp" />
 
@@ -99,7 +99,7 @@
                     android:layout_marginTop="12dp"
                     android:layout_marginRight="20dp"
                     android:fontFamily="@font/ralewayregular"
-                    android:text="This is the description of this election. It will have many words"
+                    android:text="@string/this_is_the_description_of_this_election_it_will_have_many_words"
                     android:textAlignment="center"
                     android:textSize="16dp" />
 
@@ -136,7 +136,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
 
-                        android:background="@drawable/line"></View>
+                        android:background="@drawable/line" />
 
 
                     <ImageView
@@ -173,7 +173,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/line"></View>
+                    android:background="@drawable/line" />
 
 
                 <TextView
@@ -229,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2.2"
                         android:fontFamily="@font/ralewaysemibold"
-                        android:text="Election Name 1"
+                        android:text="@string/election_name_1"
                         android:textAlignment="center"
                         android:textSize="20dp" />
 
@@ -285,7 +285,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
 
-                        android:background="@drawable/line"></View>
+                        android:background="@drawable/line" />
 
 
                     <ImageView
@@ -322,7 +322,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/line"></View>
+                    android:background="@drawable/line" />
 
 
                 <TextView

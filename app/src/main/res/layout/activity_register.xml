@@ -67,7 +67,7 @@
                         android:layout_height="40dp"
                         android:layout_marginTop="16dp"
                         android:background="@drawable/rectangle_4"
-                        android:hint="First Name"
+                        android:hint="@string/first_name"
                         android:inputType="textPersonName"
                         android:textAlignment="center">
 
@@ -79,7 +79,7 @@
                         android:layout_height="40dp"
                         android:layout_marginTop="25dp"
                         android:background="@drawable/rectangle_4"
-                        android:hint="Last Name"
+                        android:hint="@string/last_name"
                         android:inputType="textPersonName"
                         android:textAlignment="center">
 
@@ -91,7 +91,7 @@
                         android:layout_height="40dp"
                         android:layout_marginTop="25dp"
                         android:background="@drawable/rectangle_4"
-                        android:hint="Email"
+                        android:hint="@string/email"
                         android:inputType="textEmailAddress"
                         android:textAlignment="center">
 
@@ -103,7 +103,7 @@
                         android:layout_height="40dp"
                         android:layout_marginTop="25dp"
                         android:background="@drawable/rectangle_4"
-                        android:hint="Password"
+                        android:hint="@string/password"
                         android:inputType="textPassword"
                         android:textAlignment="center">
 
@@ -115,7 +115,7 @@
                         android:layout_height="40dp"
                         android:layout_marginTop="25dp"
                         android:background="@drawable/rectangle_4"
-                        android:hint="Confirm Password"
+                        android:hint="@string/confirm_password"
                         android:inputType="textPassword"
                         android:textAlignment="center">
 
@@ -135,7 +135,7 @@
             android:id="@+id/signUpBtn"
             android:layout_width="225dp"
             android:layout_height="50dp"
-            android:text="SignUp"
+            android:text="@string/signup"
             android:textColor="@android:color/white"
             android:layout_marginTop="30dp"
             android:textSize="24sp"
@@ -149,7 +149,7 @@
             android:layout_marginTop="20dp"
             android:textSize="16sp"
             android:textColor="@android:color/white"
-            android:text="Already Have an Account ? Login"/>
+            android:text="@string/already_have_an_account_login"/>
 
 
 

@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="25dp"
                     android:fontFamily="@font/ralewaybold"
-                    android:text="Profile"
+                    android:text="@string/profile"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
                     android:textSize="30dp" />
@@ -88,7 +88,7 @@
             android:gravity="center"
             android:textSize="24dp"
             android:fontFamily="@font/ralewaymedium"
-            android:text="Nipun Agarwal"/>
+            android:text="@string/nipun_agarwal"/>
 
 
         <LinearLayout
@@ -105,7 +105,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_weight="0.5"
                 android:background="@drawable/rectangle_4"
-                android:hint="First Name"
+                android:hint="@string/first_name"
                 android:textAlignment="center"
                 android:textSize="16dp" />
 
@@ -119,7 +119,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="0.5"
                 android:background="@drawable/rectangle_4"
-                android:hint="Last Name"
+                android:hint="@string/last_name"
                 android:textAlignment="center"
                 android:textSize="16dp" />
 
@@ -128,7 +128,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Username"
+            android:hint="@string/username"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:textAlignment="center"
@@ -140,7 +140,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Email"
+            android:hint="@string/email"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:textAlignment="center"
@@ -155,7 +155,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@android:color/black"
-            android:layout_height="0.5dp"></View>
+            android:layout_height="0.5dp" />
 
 
         <TextView
@@ -164,7 +164,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/ralewaybold"
-            android:text="Your Elections"
+            android:text="@string/your_elections"
             android:textAlignment="center"
             android:textAppearance="@style/register"
             android:textSize="24dp" />
@@ -195,7 +195,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Election Name"
+                    android:text="@string/election_name"
                     android:gravity="center"
                     android:layout_marginTop="10dp"
                     android:textSize="14dp"
@@ -204,7 +204,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Start Date"
+                        android:text="@string/start_date"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"
@@ -214,7 +214,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="End Date"
+                        android:text="@string/end_date"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"
@@ -224,7 +224,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:text="Description"
+                        android:text="@string/description"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"
@@ -255,7 +255,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Election Name"
+                        android:text="@string/election_name"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="14dp"
@@ -264,7 +264,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Start Date"
+                        android:text="@string/start_date"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"
@@ -274,7 +274,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="End Date"
+                        android:text="@string/end_date"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"
@@ -284,7 +284,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:text="Description"
+                        android:text="@string/description"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"
@@ -301,7 +301,7 @@
                 android:layout_height="121dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
-                android:elevation="5dp"
+                app:cardElevation="5dp"
                 app:cardCornerRadius="20dp"
                 android:layout_marginLeft="20dp">
 
@@ -314,7 +314,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Election Name"
+                        android:text="@string/election_name"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="14dp"
@@ -323,7 +323,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Start Date"
+                        android:text="@string/start_date"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"
@@ -333,7 +333,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="End Date"
+                        android:text="@string/end_date"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"
@@ -343,7 +343,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:text="Description"
+                        android:text="@string/description"
                         android:gravity="center"
                         android:layout_marginTop="10dp"
                         android:textSize="12dp"

@@ -47,7 +47,7 @@
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
                     android:layout_marginRight="25dp"
-                    android:text="Eligible Elections"/>
+                    android:text="@string/eligible_elections"/>
 
 
             </LinearLayout>
@@ -86,7 +86,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2.2"
                         android:fontFamily="@font/ralewaysemibold"
-                        android:text="Election Name 1"
+                        android:text="@string/election_name_1"
                         android:textAlignment="center"
                         android:textSize="20dp" />
 
@@ -100,7 +100,7 @@
                     android:layout_marginTop="12dp"
                     android:layout_marginRight="20dp"
                     android:fontFamily="@font/ralewayregular"
-                    android:text="This is the description of this election. It will have many words"
+                    android:text="@string/this_is_the_description_of_this_election_it_will_have_many_words"
                     android:textAlignment="center"
                     android:textSize="16dp" />
 
@@ -112,7 +112,7 @@
                     android:layout_marginTop="12dp"
                     android:layout_marginRight="20dp"
                     android:fontFamily="@font/ralewaybold"
-                    android:text="Candidates"
+                    android:text="@string/candidates"
                     android:textAlignment="center"
                     android:textAppearance="@style/candidates"
                     android:textSize="17dp" />
@@ -135,7 +135,7 @@
                     android:layout_marginTop="12dp"
                     android:layout_marginRight="20dp"
                     android:fontFamily="@font/ralewaymedium"
-                    android:text="Algorithm Used:- Minimax Condorset"
+                    android:text="@string/algorithm_used_minimax_condorset"
                     android:textAlignment="center"
                     android:textSize="16dp" />
 
@@ -217,7 +217,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="20dp"
                         android:fontFamily="@font/ralewaybold"
-                        android:text="Vote"
+                        android:text="@string/vote"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="17dp" />
@@ -264,7 +264,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="2.2"
                             android:fontFamily="@font/ralewaysemibold"
-                            android:text="Election Name 1"
+                            android:text="@string/election_name_1"
                             android:textAlignment="center"
                             android:textSize="20dp" />
 
@@ -278,7 +278,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginRight="20dp"
                         android:fontFamily="@font/ralewayregular"
-                        android:text="This is the description of this election. It will have many words"
+                        android:text="@string/this_is_the_description_of_this_election_it_will_have_many_words"
                         android:textAlignment="center"
                         android:textSize="16dp" />
 
@@ -290,7 +290,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginRight="20dp"
                         android:fontFamily="@font/ralewaybold"
-                        android:text="Candidates"
+                        android:text="@string/candidates"
                         android:textAlignment="center"
                         android:textAppearance="@style/candidates"
                         android:textSize="17dp" />
@@ -313,7 +313,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginRight="20dp"
                         android:fontFamily="@font/ralewaymedium"
-                        android:text="Algorithm Used:- Minimax Condorset"
+                        android:text="@string/algorithm_used_minimax_condorset"
                         android:textAlignment="center"
                         android:textSize="16dp" />
 
@@ -394,7 +394,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="20dp"
                             android:fontFamily="@font/ralewaybold"
-                            android:text="Vote"
+                            android:text="@string/vote"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
                             android:textSize="17dp" />

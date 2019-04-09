@@ -28,7 +28,7 @@ public class registerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
+        //initialising all my objects
         loginBtn = findViewById(R.id.loginBtn);
         firstName = findViewById(R.id.firstNameEdtTxt);
         lastName = findViewById(R.id.lastNameEdtTxt);
@@ -37,7 +37,7 @@ public class registerActivity extends AppCompatActivity {
         password = findViewById(R.id.passwordEdtTxt);
         signUp = findViewById(R.id.signUpBtn);
         auth = FirebaseAuth.getInstance();
-
+        //initialising progress bar
         progressBar = new ProgressDialog(this);
         progressBar.setMessage("Loading, Please Wait");
         progressBar.setCancelable(false);
@@ -64,7 +64,7 @@ public class registerActivity extends AppCompatActivity {
         String emailString = email.getText().toString();
         String passwordString = password.getText().toString();
         String confirmPasswordString = confirmPassword.getText().toString();
-
+        //checking for all the cases whether correct data is entered or not.
         if(first.isEmpty()){
             Toast.makeText(this, "Please Enter your Name ", Toast.LENGTH_SHORT).show();
         }else if(last.isEmpty()){
@@ -83,6 +83,7 @@ public class registerActivity extends AppCompatActivity {
                     Toast.makeText(this, "Password length has to be min of 6 characters", Toast.LENGTH_SHORT).show();
                 }else{
                     progressBar.show();
+                    //creating user with email and password provided.
                     auth.createUserWithEmailAndPassword(emailString,passwordString).addOnCompleteListener(registerActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {

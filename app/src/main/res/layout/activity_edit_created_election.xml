@@ -50,7 +50,7 @@
                     android:fontFamily="@font/ralewaybold"
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
-                    android:text="Elections"/>
+                    android:text="@string/elections"/>
 
                 <TextView
                     android:layout_weight="0.7"
@@ -61,7 +61,7 @@
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
                     android:layout_marginRight="25dp"
-                    android:text="Ongoing"/>
+                    android:text="@string/ongoing"/>
 
 
             </LinearLayout>
@@ -76,7 +76,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
-            android:text="IOS v/s Android"
+            android:text="@string/election_Name"
             android:fontFamily="@font/ralewaysemibold"
 
             android:textAppearance="@style/gsoc_v_s_go"
@@ -93,7 +93,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/ralewaysemibold"
-            android:text="Description"
+            android:text="@string/description"
             android:textAppearance="@style/description"
             android:gravity="center_horizontal|top"
             />
@@ -116,7 +116,7 @@
                 android:textAlignment="center"
                 android:background="@drawable/curvededittext"
                 android:textSize="12dp"
-                android:text="Election to decide which one is better"
+                android:text="@string/election_description"
                 android:layout_height="wrap_content" />
 
         </android.support.v7.widget.CardView>
@@ -149,7 +149,7 @@
                     android:layout_marginTop="25dp"
                     android:fontFamily="@font/ralewaysemibold"
                     android:gravity="center_horizontal|top"
-                    android:text="Start"
+                    android:text="@string/start"
                     android:textAppearance="@style/description" />
 
 
@@ -199,7 +199,7 @@
                     android:layout_marginTop="25dp"
                     android:fontFamily="@font/ralewaysemibold"
                     android:gravity="center_horizontal|top"
-                    android:text="Stop"
+                    android:text="@string/stop"
                     android:textAppearance="@style/description" />
 
 
@@ -243,7 +243,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/ralewaysemibold"
-            android:text="Algorithm"
+            android:text="@string/algorithm"
             android:textAppearance="@style/description"
             android:gravity="center_horizontal|top"
             />
@@ -266,7 +266,7 @@
                 android:textAlignment="center"
                 android:background="@drawable/curvededittext"
                 android:textSize="12dp"
-                android:text="Minimax Condorset"
+                android:text="@string/minimax_condorset"
                 android:layout_height="wrap_content" />
 
         </android.support.v7.widget.CardView>
@@ -282,7 +282,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/ralewaysemibold"
-            android:text="Candidates"
+            android:text="@string/candidates"
             android:textAppearance="@style/description"
             android:gravity="center_horizontal|top"
             />
@@ -333,7 +333,7 @@
                 android:fontFamily="@font/ralewaybold"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:text="Edit"/>
+                android:text="@string/edit"/>
 
 
 
