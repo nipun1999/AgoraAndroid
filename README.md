@@ -10,11 +10,6 @@ The link for the video of the whole flow of the prototype on a live android desi
 https://drive.google.com/file/d/1xZagRDk4iAhOXPovUwIhTXS0ROOUaaJC/view?usp=sharing
 
 
-## The link for the proposal of the draft of GSOC'19:
-
-https://docs.google.com/document/d/15VaPmfuO8C7sOvAAEi7StC2sv6MOjSJ96-IwERoKC5A/edit?usp=sharing
-
-
 ## Mockups For Android Development under Project Agora Web
 I have created mockups regarding Issue #91
 
@@ -31,10 +26,10 @@ Wen the app is opened this will be introductory splash screen with logo spinning
 
 ![Loading](gsoc19 android mockups/Loading.png)
 
-
 ###### Login Page
 
 The Login Page will have option of login through google, facebook and email. Used Agora colours all over
+
 ![AOSSIE_Login](gsoc19 android mockups/AOSSIE_Login.jpg)
 
 ###### Register Page
@@ -96,6 +91,12 @@ User can Cast vote through this screen by using range algorithm.
 
 ![voteScreen](gsoc19 android mockups/voteScreenRange.png)
 
+###### Cast Voitng Screen (range)
+
+User can Cast vote through this screen by using score algorithm.
+
+![voteScreen](gsoc19 android mockups/voteScreenScore.png)
+
 
 ###### Side Nav Bar
 
@@ -109,5 +110,3 @@ Profile section of the app with menu feautres of changing password, viewing your
 
 ![Profile](gsoc19 android mockups/Profile.png)
 
-
-Waiting eagerly for the feedback. You can see all the designs in the repositiory as well
