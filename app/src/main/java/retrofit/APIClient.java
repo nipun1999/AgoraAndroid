@@ -1,0 +1,52 @@
+package retrofit;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
+
+public class APIClient {
+
+    private static ApiInterface apiInterface;
+    //api client setup
+    public static ApiInterface getClient() {
+        if (apiInterface == null) {
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl("http://agora-rest-api.herokuapp.com/")
+                    .addConverterFactory(ScalarsConverterFactory.create())
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+
+            apiInterface = retrofit.create(ApiInterface.class);
+        }
+        return apiInterface;
+    }
+
+    private static OkHttpClient getHttpClient() {
+        OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
+        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+        httpClient.connectTimeout(30, TimeUnit.SECONDS);
+        httpClient.readTimeout(30, TimeUnit.SECONDS);
+        httpClient.writeTimeout(30, TimeUnit.SECONDS);
+        httpClient.addInterceptor(logging);
+        httpClient.addInterceptor(new Interceptor() {
+            @Override
+            public Response intercept(Chain chain) throws IOException {
+                Request request = chain.request();
+                Request.Builder builder = request.newBuilder();
+//                builder.addHeader("Content-Type","application/json");
+                request = builder.build();
+                return chain.proceed(request);
+            }
+        });
+        return httpClient.build();
+    }
+}

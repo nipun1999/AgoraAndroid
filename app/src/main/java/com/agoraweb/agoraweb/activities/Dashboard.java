@@ -1,10 +1,8 @@
-package com.agoraweb.agoraweb;
+package com.agoraweb.agoraweb.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -16,11 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.agoraweb.agoraweb.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import utils.sessionManager;
 
 public class Dashboard extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -28,12 +28,15 @@ public class Dashboard extends AppCompatActivity
     private FirebaseAuth auth;
     private CardView total,pending,active,completed;
     private Button createElection;
+    private sessionManager manager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        manager = new sessionManager(this);
 
         total = findViewById(R.id.totalCard);
         pending = findViewById(R.id.pendingCard);
@@ -175,24 +178,12 @@ public class Dashboard extends AppCompatActivity
 
     private void logOutUser() {
 
-        auth.signOut();
+//        auth.signOut();
+        //resetting shared preferences
+        manager.setLoginSatus(false);
         Toast.makeText(this, "Signed Out Successfully", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(Dashboard.this, loginScreen.class));
         finish();
-
-        FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user == null) {
-                    // user auth state is changed - user is null
-                    // launch login activity
-                    startActivity(new Intent(Dashboard.this, loginScreen.class));
-                    finish();
-                }
-            }
-        };
-
 
     }
 }

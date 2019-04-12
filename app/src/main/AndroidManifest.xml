@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.agoraweb.agoraweb">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,34 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".loginScreen" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activities.loginScreen" />
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".Dashboard"
+            android:name=".activities.Dashboard"
             android:label="@string/title_activity_dashboard"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".createdElections" />
-        <activity android:name=".editCreatedElection" />
-        <activity android:name=".completedElection" />
-        <activity android:name=".EligibleElections" />
-        <activity android:name=".registerActivity" />
-        <activity android:name=".createElection1" />
-        <activity android:name=".createElection2" />
-        <activity android:name=".createElection3" />
-        <activity android:name=".createElection4" />
-        <activity android:name=".preferrentialVote">
-
-        </activity>
-        <activity android:name=".profile">
-        </activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activities.createdElections" />
+        <activity android:name=".activities.editCreatedElection" />
+        <activity android:name=".activities.completedElection" />
+        <activity android:name=".activities.EligibleElections" />
+        <activity android:name=".activities.registerActivity" />
+        <activity android:name=".activities.createElection1" />
+        <activity android:name=".activities.createElection2" />
+        <activity android:name=".activities.createElection3" />
+        <activity android:name=".activities.createElection4" />
+        <activity android:name=".activities.preferrentialVote"></activity>
+        <activity android:name=".activities.profile"></activity>
+        <activity android:name=".activities.emailVerification"></activity>
     </application>
 
 </manifest>

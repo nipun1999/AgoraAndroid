@@ -1,17 +1,20 @@
-package com.agoraweb.agoraweb;
+package com.agoraweb.agoraweb.activities;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 
+import com.agoraweb.agoraweb.R;
 import com.google.firebase.auth.FirebaseAuth;
+
+import utils.sessionManager;
 
 public class SplashActivity extends AppCompatActivity {
 
 
     private FirebaseAuth auth;
+    private sessionManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +23,10 @@ public class SplashActivity extends AppCompatActivity {
 
         int secondsDelayed = 1;
         auth = FirebaseAuth.getInstance();
+        manager = new sessionManager(this);
         //checking if the user is logged in or not
-        if(auth.getCurrentUser()==null){
+
+        if(!manager.getLoginStatus()){
             new Handler().postDelayed(new Runnable() {
                 public void run() {
                     //directing to login screen

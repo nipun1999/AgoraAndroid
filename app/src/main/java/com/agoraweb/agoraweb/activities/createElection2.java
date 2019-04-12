@@ -1,39 +1,39 @@
-package com.agoraweb.agoraweb;
+package com.agoraweb.agoraweb.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
-public class createdElections extends AppCompatActivity {
+import com.agoraweb.agoraweb.R;
 
-    private CardView electionCard;
+public class createElection2 extends AppCompatActivity {
+
+    private Button nextBtn;
     private ImageView backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_created_elections);
+        setContentView(R.layout.activity_create_election2);
 
-        electionCard = findViewById(R.id.electionCard);
+        nextBtn = findViewById(R.id.nextBtn);
         backBtn = findViewById(R.id.backBtn);
 
-        electionCard.setOnClickListener(new View.OnClickListener() {
+        nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(createdElections.this,editCreatedElection.class));
+                startActivity(new Intent(createElection2.this,createElection3.class));
             }
         });
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(createdElections.this,Dashboard.class));
+                startActivity(new Intent(createElection2.this,createElection1.class));
             }
         });
-
-
     }
 }
