@@ -1,11 +1,14 @@
 ## Codebase for the agora android app.
 
 I have used Native Java for development.
-Currently i have used firebase authentication for registration and login but later on we will move to rest API’s. 
+
+**I have used Retrofit for calling the signup and login API's. The API's that i have used are part of agora web api's.
+I have tried to use OOP concepts wherever possible and documented the code efficiently.**
+
 
 Also, the data in the application is all dummy and certain features like adding candidates in creating election, choosing algorithm are all hard coded and not functional. This prototype is made to demonstrate the UI aspect of every screen and basic functionalities like Login, Signup etc.
 
-The link for the video of the whole flow of the prototype on a live android design is given below:
+**The link for the video of the whole flow of the prototype on a live android design is given below:**
 
 https://drive.google.com/file/d/1xZagRDk4iAhOXPovUwIhTXS0ROOUaaJC/view?usp=sharing
 
