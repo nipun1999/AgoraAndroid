@@ -83,7 +83,9 @@
                     android:gravity="center">
 
                     <EditText
-                        android:layout_width="300dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_height="40dp"
                         android:hint="@string/candidate_name"
                         android:textAlignment="center"

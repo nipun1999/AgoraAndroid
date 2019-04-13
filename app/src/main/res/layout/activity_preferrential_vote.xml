@@ -193,6 +193,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:textColor="@android:color/white"
             android:textSize="15dp"
             android:text="@string/you_can_only_vote_a_single_person_in_this_election"/>

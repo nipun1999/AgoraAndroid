@@ -83,7 +83,9 @@
                     android:gravity="center">
 
                     <EditText
-                        android:layout_width="300dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_height="40dp"
                         android:hint="@string/election_name"
                         android:textAlignment="center"
@@ -93,7 +95,9 @@
                     </EditText>
 
                     <EditText
-                        android:layout_width="300dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_height="80dp"
                         android:hint="Election Description"
                         android:padding="5dp"
@@ -119,6 +123,8 @@
                             android:src="@drawable/calender"/>
                         <EditText
                             android:layout_width="0dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
                             android:layout_weight="0.815"
                             android:layout_height="40dp"
                             android:hint="@string/start"
@@ -145,6 +151,8 @@
                             android:src="@drawable/calender"/>
                         <EditText
                             android:layout_width="0dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
                             android:layout_weight="0.815"
                             android:layout_height="40dp"
                             android:hint="@string/end"
