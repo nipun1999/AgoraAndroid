@@ -27,7 +27,7 @@ Hoping to get the feedback from all the mentors and other people.
 
 Wen the app is opened this will be introductory splash screen with logo spinning in circular motion. It will check wether the user is signed in or not and will redirect to login page or dashboard page accordingly.
 
-![Loading](gsoc19 android mockups/Loading.png)
+![Loading](gsoc19 android mockups/AOSSIE_Login.jpg)
 
 ###### Login Page
 
